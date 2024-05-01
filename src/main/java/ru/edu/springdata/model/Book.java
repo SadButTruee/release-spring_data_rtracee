@@ -9,6 +9,13 @@ package ru.edu.springdata.model;
  * Между авторами и адресами свзяь один к одному
  */
 
+import lombok.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class Book {
 
     private Long id;
