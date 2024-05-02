@@ -39,7 +39,7 @@ public class BookController {
     }
 
     @PostMapping("/get/{category}/by-category")
-    public List<Book>  getByCategory(@PathVariable String category) {
-        return bookService.getByCategory(category);
+    public List<Book>  getByCategory(@PathVariable Long categoryId) {
+        return bookService.getByCategory(categoryId);
     }
 }

@@ -1,6 +1,7 @@
 package ru.edu.springdata.service;
 
 import ru.edu.springdata.model.Book;
+import ru.edu.springdata.model.Category;
 
 import java.util.List;
 
@@ -14,5 +15,5 @@ public interface BookService {
 
     List<Book> getByLanguage(String language);
 
-    List<Book>  getByCategory(String category);
+    List<Book>  getByCategory(Long categoryId);
 }
